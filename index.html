@@ -3,23 +3,102 @@
 <html>
 <head>
     
-    <title> My Github Pages Site</title>
+    <title>My Github Pages Site</title>
+    
+    <style>
+        
+        html, body {
+            scroll-behavior: smooth;
+        }
+        
+        #about, #gallery, #contact {
+            height 700px;
+        }
+        
+        #about, #contact {
+            background-color: aquamarine;
+        }
+        
+        #nav {
+            background-color: cornflowerblue;
+            color: #fff;
+            height:25px;
+            padding-top: 25px;
+            position: fixed;
+            top: 0;
+        }
+        
+        h1 {
+            /* offset to accommodate fixed nav */
+            padding-top: 50px;
+        }
+        
+        
+    </style>
+    
 
 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
  
 <body>
 <h1> portfolio site</h1>
     <p> text github pages</p>
 
+<div id="nav">
+    <a href="#about">ABOUT</a> * <a href="#gallery">GALLERY</a> * <a href="#contact">CONTACT</a>
+    </div>
+    
+    
+<div id="about"> 
+    <h1>About</h1>
+    <p> My Work</p>
+    </div>
+    
+    <div id="gallery">
+        <a href="gallery/big_1.jpg" data-fancybox="group" data-caption="Caption #1">
+            <img src="gallery/small_1.jpg" alt="" />
+        </a>
 
+        <a href="gallery/big_2.jpg" data-fancybox="group" data-caption="Caption #2">
+            <img src="gallery/small_2.jpg" alt="" />
+        </a>
+        
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        blah<br/> blah<br/> blah<br/> blah<br/>
+        
+    </div>
+    
+<div id="contact">   
+    <h1> Contact me</h1>
+    
+    
+    </div>
+    
+    
 
-
-
-
-
-
-
-
+<!-- JS -->
+	<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
