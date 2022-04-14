@@ -9,10 +9,13 @@
         
         html, body {
             scroll-behavior: smooth;
+            margin: 0;
         }
         
         #about, #gallery, #contact {
+            
             height 700px;
+            
         }
         
         #about, #contact {
@@ -20,19 +23,52 @@
         }
         
         #nav {
-            background-color: cornflowerblue;
+            background-color: #2D2F3B;
             color: #fff;
             height:25px;
             padding-top: 25px;
+            padding-bottom: 15px;
             position: fixed;
             top: 0;
+            max-width: 950px;
+            border-color: black;
+            border-bottom: 6px solid #4B4E61;
+            padding-right: 550px;
+            
+            
+        }
+        
+        #nav a {
+            text-decoration: none;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        
+        .banner {
+            display: grid;
+            grid-template-columns: 200px auto;
+            margin-left: 0px;
+            margin-right: auto;
+            max-width: 950px;
         }
         
         h1 {
             /* offset to accommodate fixed nav */
             padding-top: 50px;
+
         }
         
+        .wave {
+            color: aquamarine;
+        }
+        
+        
+        
+        .container {
+            margin-left: 20px;
+        }
         
     </style>
     
@@ -42,29 +78,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
  
+    <!------------------------->
+    
+    
+    
 <body>
-<h1> portfolio site</h1>
-    <p> text github pages</p>
+    
+        <h1> portfolio site</h1>
+        <p> text github pages</p>
 
-<div id="nav">
-    <a href="#about">ABOUT</a> * <a href="#gallery">GALLERY</a> * <a href="#contact">CONTACT</a>
+    <div class="banner">
+        <div id="nav">   
+            <a href="#about">ABOUT</a> <span class="wave">&asymp;</span> 
+            <a href="#gallery">GALLERY</a> <span class="wave">&asymp;</span>  <a href="#contact">CONTACT</a>
+        </div>
     </div>
     
-    
-<div id="about"> 
-    <h1>About</h1>
-    <p> My Work</p>
+    <div id="about"> 
+        <div class="container">
+        <h1>About</h1>
+        <p> My Work</p>
+        </div>
     </div>
     
     <div id="gallery">
-        <a href="gallery/big_1.jpg" data-fancybox="group" data-caption="Caption #1">
-            <img src="gallery/small_1.jpg" alt="" />
-        </a>
+        
+        <a href="gallery/alpacabig1.jpg" data-fancybox="group" data-caption="Caption #1">
+            <img src="gallery/alpacasmall1.jpg" alt="" />
+        </a> 
 
-        <a href="gallery/big_2.jpg" data-fancybox="group" data-caption="Caption #2">
-            <img src="gallery/small_2.jpg" alt="" />
+        <a href="gallery/alpacabig2.jpg" data-fancybox="group" data-caption="Caption #2">
+            <img src="gallery/alpacasmall2.jpg" alt="" />
         </a>
-        
+    <div class="container">
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
@@ -85,7 +131,7 @@
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
-        
+    </div>
     </div>
     
 <div id="contact">   
