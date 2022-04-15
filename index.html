@@ -4,6 +4,8 @@
 <head>
     
     <title>My Github Pages Site</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <style>
         
@@ -15,17 +17,24 @@
             scroll-behavior: smooth;
             margin: 0;
             font-family: 'Lato', sans-serif;
-            background-color: #B5E0DC; 
+            background-color: #EAFDF8;
+             
         }
         
-        #about, #gallery, #contact {
+        #about, #gallery, #tech, #contact {
             
             height 700px;
             
         }
         
-        #about, #contact {
+        #about {
+            background-color: #B5E0DC;
+            padding-bottom: 20px;
+        }
+        
+        #contact {
             background-color: aquamarine;
+            padding-bottom: 20px;
         }
         
         #nav {
@@ -36,10 +45,9 @@
             padding-bottom: 15px;
             position: fixed;
             top: 0;
-            max-width: 950px;
+            width: 950px;
             border-color: black;
             border-bottom: 6px solid #4B4E61;
-            padding-right: 550px;
             
             
         }
@@ -60,12 +68,18 @@
             max-width: 950px;
         }
         
-        h1 {
+        h1, h3 {
             /* offset to accommodate fixed nav */
-            padding-top: 50px;
             font-family: 'Neucha', cursive;
             letter-spacing: 1px;
+            padding-top: 20px;
     
+        }
+        
+        #cover {
+            color: #2D2F3B;
+            text-align: center;
+            padding-top: 50px;
         }
         
         .wave {
@@ -74,14 +88,17 @@
         
         
         
-        .container {
+        .container, #contact p, #contact h1, .details {
             margin-left: 20px;
         }
         
-        #bio {
+        #tech {
            background-color: #82DDB5;
             background-image: url("Gallery/alpacabackdropaqua.jpg"); 
             background-repeat: no-repeat, repeat-x;
+            padding-bottom: 20px;
+            
+            
         }
         
         
@@ -115,6 +132,7 @@
             width: 80%;
             margin-bottom: 20px;
             padding: 10px;
+            
         }
         
         .footer {
@@ -135,14 +153,17 @@
     
     
 <body>
-    
+    <div id="cover">
         <h1> Sarah Bridge</h1>
-        <p> and the alpacas</p>
-
+        <h3> and the alpacas</h3>
+    </div>
+    
     <div class="banner">
         <div id="nav">   
             <a href="#about">ABOUT</a> <span class="wave">&asymp;</span> 
-            <a href="#gallery">GALLERY</a> <span class="wave">&asymp;</span>  <a href="#contact">CONTACT</a>
+            <a href="#gallery">GALLERY</a> <span class="wave">&asymp;</span> 
+            <a href="#tech">SKILLS</a> <span class="wave">&asymp;</span> 
+            <a href="#contact">CONTACT</a>
         </div>
     </div>
     
@@ -175,23 +196,12 @@
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> 
     </div>
     </div>
     
- <div id="bio">
-    <h1> Meet the Alpacas</h1>
+ <div id="tech">
+    <h1> Technical Skills</h1>
      blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
@@ -210,7 +220,7 @@
     <div class="containerq">
         <div class="description">
             <h1> Contact me</h1>
-                <p>Sphinx of Black Quartz, Judge My Vow</p>
+                <p>Contact me here</p>
         
         </div>
     </div>
@@ -237,11 +247,11 @@
     </div>
     <div class="details">
         <h3> Contact Information</h3>
-            <p>Sphinx of Black Quartz, Judge My Vow</p>
+            <p>Where to find me</p>
         <ul>
-            <li><img src="Gallery/location.png">Adress</li>
-            <li><img src="Gallery/phone.png">Phone</li>
-            <li><img src="Gallery/email.png">Email</li>
+            <li><img src="Gallery/location.png">12 Paddock Road, Fields, NZ</li>
+            <li><img src="Gallery/phone.png">027 654 321</li>
+            <li><img src="Gallery/email.png">Myemail@email.com</li>
         </ul>
     </div>
 </div>
