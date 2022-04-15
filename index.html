@@ -35,6 +35,7 @@
         #contact {
             background-color: aquamarine;
             padding-bottom: 20px;
+            margin-top: -22px;
         }
         
         #nav {
@@ -45,7 +46,7 @@
             padding-bottom: 15px;
             position: fixed;
             top: 0;
-            width: 950px;
+            width: 100%;
             border-color: black;
             border-bottom: 6px solid #4B4E61;
             
@@ -86,9 +87,13 @@
             color: aquamarine;
         }
         
+        .wave2 {
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         
-        
-        .container, #contact p, #contact h1, .details {
+        .container, #contact p, #contact h1, .details, #gallery, #tech h1, #tech p{
             margin-left: 20px;
         }
         
@@ -97,10 +102,17 @@
             background-image: url("Gallery/alpacabackdropaqua.jpg"); 
             background-repeat: no-repeat, repeat-x;
             padding-bottom: 20px;
-            
+        }
+        
+        #gallery {
             
         }
         
+        
+        .social {
+            text-align: center;
+            padding-top: 30px;
+        }
         
         /******CONTACT*******/
         .quote {
@@ -169,46 +181,47 @@
     
     <div id="about"> 
         <div class="container">
-        <h1>About</h1>
-        <p> My Work</p>
+        <h1>About Me</h1>
+        <p> Me and my merry band of alpacas have been going around making alpaca related art for years now. Alpacas make an excellent crew as they not only know how to pose for the camera, but want to. Or at least most of them want to when you're holding food. 
+        Although they haven't told me this, I assume that the reason that they all got so into joining my art is actually because one day Bob the white alpaca once saw himself in the clouds. This must have sparked his desire to be in the spotlight. So once I told him that more people would see him in "The Cloud" online than the actual clouds, I'm pretty sure he was all on board and rallied his mates to get behind this noble cause.  </p>
         </div>
     </div>
     
     <div id="gallery">
-        
-        <a href="Gallery/alpacabig1.jpg" data-fancybox="group" data-caption="Caption #1">
+        <div class="container">
+            <h1> My Portfolio</h1>
+            
+    </div>
+        <a href="Gallery/alpacabig1.jpg" data-fancybox="group" data-caption="Bob">
             <img src="Gallery/alpacasmall1.jpg" alt="" />
         </a> 
 
-        <a href="Gallery/alpacabig2.jpg" data-fancybox="group" data-caption="Caption #2">
+        <a href="Gallery/alpacabig2.jpg" data-fancybox="group" data-caption="Joe">
             <img src="Gallery/alpacasmall2.jpg" alt="" />
         </a>
         
-        <a href="Gallery/alpacabig3.jpg" data-fancybox="group" data-caption="Caption #2">
+        <a href="Gallery/alpacabig3.jpg" data-fancybox="group" data-caption="Pebbles">
         <img src="Gallery/alpacasmall3.jpg" alt="" />
         </a>
         
         
     <div class="container">
-        Here is a selection of alpaca photos I took.<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> 
+        <p>Here is a selection of alpaca photos I took.</p> 
     </div>
     </div>
     
  <div id="tech">
     <h1> Technical Skills</h1>
-     blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> blah<br/> blah<br/>
-        blah<br/> blah<br/> 
+        <p><span class="wave2">&asymp;</span> Alpaca photography<br/>
+        <br/><span class="wave2">&asymp;</span> Alpaca friendship<br/>
+        <br/> <span class="wave2">&asymp;</span>Alpaca 3D modelling<br/> 
+        <br/> <span class="wave2">&asymp;</span>Game design for alpacas<br/>
+       <br/><span class="wave2">&asymp;</span> Alpaca posing<br/>
+        <br/><span class="wave2">&asymp;</span> Alpaca rangling<br/>
+        <br/> <span class="wave2">&asymp;</span>Teaching alpacas selfies<br/> 
+        <br/> <span class="wave2">&asymp;</span>Feeding the alpacas </p>
+     
+    
     
     
     
@@ -257,7 +270,9 @@
 </div>
     
     <div class="footer">
-        
+        <div class="container">
+        <div class="social"><img src="Gallery/social.png"></div>
+    </div>
     </div>
     
 
