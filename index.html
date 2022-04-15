@@ -15,6 +15,7 @@
             scroll-behavior: smooth;
             margin: 0;
             font-family: 'Lato', sans-serif;
+            background-color: #B5E0DC; 
         }
         
         #about, #gallery, #contact {
@@ -64,8 +65,7 @@
             padding-top: 50px;
             font-family: 'Neucha', cursive;
             letter-spacing: 1px;
-            
-
+    
         }
         
         .wave {
@@ -80,14 +80,52 @@
         
         #bio {
            background-color: #82DDB5;
-            background-image: url("Gallery/alpacabackdrop1b.jpg"); 
-            
+            background-image: url("Gallery/alpacabackdropaqua.jpg"); 
+            background-repeat: no-repeat, repeat-x;
         }
         
+        
+        /******CONTACT*******/
+        .quote {
+            background-color: aquamarine;
+        }
+
+        .quote .containerq {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+        }
+        
+        .form {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+       
+        ul {
+            list-style-type: none;
+        }
+        
+        #msg {
+            margin-top: 10px;
+        }
+        
+        input, #msg {
+            border: none;
+            border-radius: 5px;
+            background-color: #AFFFED;
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        
+        .footer {
+            background-color: #2D2F3B;
+            color: white;
+            height: 90px;
+           
+        }
+        
+        
     </style>
-    
-
-
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -153,7 +191,7 @@
     </div>
     
  <div id="bio">
-    <h1> Meet the alpacas</h1>
+    <h1> Meet the Alpacas</h1>
      blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
         blah<br/> blah<br/> blah<br/> blah<br/>
@@ -169,11 +207,48 @@
     
     
 <div id="contact">   
-    <h1> Contact me</h1>
-    
-    
+    <div class="containerq">
+        <div class="description">
+            <h1> Contact me</h1>
+                <p>Sphinx of Black Quartz, Judge My Vow</p>
+        
+        </div>
     </div>
+    <div class="form">
+        <form action="/my-handling-form-page" method="post">
+         <ul>
+          <li>
+
+            <input type="text" id="name" name="user_name" value="name"/>
+          </li>
+          <li>
+
+            <input type="email" id="mail" name="user_email" value="email"/>
+          </li>
+             <li>
+            <input type="email" id="mail" name="user_email" value="subject"/>
+          </li>
+          <li>
+
+            <textarea id="msg" name="user_message">message...</textarea>
+          </li>
+         </ul>
+    </form>
+    </div>
+    <div class="details">
+        <h3> Contact Information</h3>
+            <p>Sphinx of Black Quartz, Judge My Vow</p>
+        <ul>
+            <li><img src="Gallery/location.png">Adress</li>
+            <li><img src="Gallery/phone.png">Phone</li>
+            <li><img src="Gallery/email.png">Email</li>
+        </ul>
+    </div>
+</div>
     
+    <div class="footer">
+        
+    </div>
     
 
 <!-- JS -->
